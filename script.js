@@ -3,9 +3,9 @@
 function fun() {
 var str = document.getElementById("evaluatedText").value;
 var count = 0;
-var splited = str.split(' ');
-for (var i = 0; i < splited.length; i++) {
-        if (splited[i] != "") {
+var splitedArr = str.split(' ');
+for (var i = 0; i < splitedArr.length; i++) {
+        if (splitedArr[i] != "") {
             count += 1;
         }
 		}
