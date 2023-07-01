@@ -1,8 +1,13 @@
 //your code here
-let evaluatedText = document.getElementById("evaluatedText");
-let letterCount = document.getElementById("letterCount");
 
-evaluatedText.addEventListener("input",function(){
-	let text = evaluatedText.value;
-	letterCount.innerText = text.length;
-})
+function fun() {
+var str = document.getElementById("evaluatedText").value;
+var count = 0;
+var splited = str.split(' ');
+for (var i = 0; i < splited.length; i++) {
+        if (splited[i] != "") {
+            count += 1;
+        }
+		}
+	document.getElementById("wordCount").innerHTML = count;
+}
