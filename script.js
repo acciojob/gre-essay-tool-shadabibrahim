@@ -1,7 +1,8 @@
 //your code here
-let inp = document.getElementById("evaluatedText");
-let ans = document.getElementById("letterCount");
+let evaluatedText = document.getElementById("evaluatedText");
+let letterCount = document.getElementById("letterCount");
 
-inp.addEventListener("keyup",()=> {
-		ans.innerText = inp.value.length;
-});
+evaluatedText.addEventListener("input",function(){
+	let text = evaluatedText.value;
+	letterCount.innerText = text.length;
+})
